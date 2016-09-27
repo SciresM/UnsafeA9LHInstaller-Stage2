@@ -23,5 +23,4 @@
 #define MAX_STAGE1_SIZE   0x1E70
 #define MAX_STAGE2_SIZE   0x89A00
 
-static inline void installer(u32 a9lhBoot);
-static inline void uninstaller(void);
+static inline void installer(void);

@@ -1,10 +1,9 @@
-# Safe A9LH Installer
-*A noob-proof ARM9LoaderHax installer/updater/uninstaller*
+# Unsafe A9LH Installer, Stage 2
+*An otpless_payload.bin for [UnsafeA9LHInstaller](http://github.com/SciresM/UnsafeA9LHInstaller)*
 
 **Usage / Features:**
 
-For a comprehensive guide to installing A9LH and to 3DS hacking in general, refer to [Plailect's guide](https://github.com/Plailect/Guide/wiki/Get-Started).  
-For other details about the program, refer to the [GBATemp thread](http://gbatemp.net/threads/safea9lhinstaller.419577/).
+build, re-name to otpless_payload.bin, use with [UnsafeA9LHInstaller](http://github.com/SciresM/UnsafeA9LHInstaller).
 
 **Credits:**
  

@@ -363,16 +363,14 @@ void writeFirm(u8 *inbuf, u32 firm, u32 size)
 }
 
 //Setup keyslot 0x11 for key sector de/encryption
-void setupKeyslot0x11(u32 a9lhBoot, const void *otp)
+void setupKeyslot0x11(void)
 {
     u8 shasum[0x20];
     u8 keyX[0x10];
     u8 keyY[0x10];
 
     //If booting via A9LH, use the leftover contents of the SHA register
-    if(a9lhBoot) memcpy((void *)shasum, (void *)REG_SHA_HASH, 0x20);
-    //Else calculate the otp.bin hash
-    else sha(shasum, otp, 0x90, SHA_256_MODE);
+    memcpy((void *)shasum, (void *)REG_SHA_HASH, 0x20);
 
     //Set keyX and keyY
     memcpy(keyX, shasum, 0x10);
